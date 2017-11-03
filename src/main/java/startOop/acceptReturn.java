@@ -7,7 +7,7 @@ public class acceptReturn {
     public static void main(String[] args) {
 //        stringWord();
 //        charWord();
-        lestIndex("Слово", 'л');
+        System.out.println(lestIndex("Слон", 'л'));
 
     }
 
@@ -29,8 +29,7 @@ public class acceptReturn {
     }
 
     private static int lestIndex(String line, char letter) {
-        int number = line.indexOf(letter);
-        System.out.println(number);
-        return number;
+        return line.indexOf(letter);
+        }
     }
-}
+

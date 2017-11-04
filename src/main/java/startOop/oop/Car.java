@@ -1,0 +1,69 @@
+package startOop.oop;
+
+public class Car {
+    String number;
+    String color;
+    private int countHuman = 0;
+    int status = 0;
+
+
+    public String getNumber() {
+        return number;
+    }
+
+    public void setNumber(String number) {
+        this.number = number;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    public void printAboutMe() {
+        System.out.println("Number - " + number + ", color - " + color + ", passangers - " + countHuman);
+    }
+
+    public void addHuman(int count) {
+        countHuman = count;
+    }
+    public void star() {
+        if (status == 0) {
+            System.out.println("Авто" + "Number - " + number + ", color - " + color + ", passangers - " + countHuman + " звелось");
+        } else if (status == 1) {
+            System.out.println("Авто" + "Number - " + number + ", color - " + color + ", passangers - " + countHuman
+                    + " не могу завестись, так как уже заведена");
+        } else {
+            System.out.println("Авто" + "Number - " + number + ", color - " + color + ", passangers - "
+                    + countHuman + " не могу завестись так как уже заведена");
+        }
+
+    }
+    public void move() {
+        if (status == 0) {
+            System.out.println("Авто" + "Number - " + number + ", color - " + color + ", passangers - " + countHuman + " поехало");
+        } else if (status == 1) {
+            System.out.println("Авто" + "Number - " + number + ", color - " + color + ", passangers - " + countHuman
+                    + " не могу ехать так как уже еду");
+        } else {
+            System.out.println("Авто" + "Number - " + number + ", color - " + color + ", passangers - "
+                    + countHuman + " не могу ехать так как еще не заведена");
+        }
+
+    }
+    public void stop() {
+        if (status == 0) {
+            System.out.println("Авто" + "Number - " + number + ", color - " + color + ", passangers - " + countHuman
+                    + " остановилось с выключением двигателя");
+        } else if (status == 1) {
+            System.out.println("Авто" + "Number - " + number + ", color - " + color + ", passangers - " + countHuman
+                    + " не могу остановиться так как заведенная стою");
+        } else {
+            System.out.println("Авто" + "Number - " + number + ", color - " + color + ", passangers - "
+                    + countHuman + " не могу остановиться так как не заведенная стою");
+        }
+    }
+}

@@ -1,4 +1,4 @@
-package startOop;
+package startOop.string;
 
 public class ThreeLines {
 

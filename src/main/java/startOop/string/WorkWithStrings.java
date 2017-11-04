@@ -1,4 +1,4 @@
-package startOop;
+package startOop.string;
 
 import java.util.Arrays;
 import java.util.Scanner;

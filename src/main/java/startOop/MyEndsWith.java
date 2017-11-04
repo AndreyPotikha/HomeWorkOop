@@ -9,8 +9,21 @@ public class MyEndsWith {
     }
 
     private static String[] mySplit(String line1, String line2) {
-        line1.split(line2);
-        System.out.println(line1);
+        line1 += " " + line2;
+        char check;
+        int counter = 0;
+        char checkMass[] = new char[line1.length()];
+        String massLine[] = new String[line1.length()];
+        for (int i = 0; i < line1.length() - 1; i++) {
+            check = line1.charAt(i);
+            if (check == ' ') {
+                for (int j = 0; j < counter; j++) {
+
+                }
+            }
+            counter++;
+
+        }
         return null;
     }
 

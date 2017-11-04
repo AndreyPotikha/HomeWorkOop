@@ -2,7 +2,7 @@ package startOop;
 
 import java.util.Scanner;
 
-public class acceptReturn {
+public class AcceptReturn {
 
     public static void main(String[] args) {
 //        stringWord();

@@ -3,33 +3,52 @@ package startOop.oop;
 public class Car {
     String number;
     String color;
+    String marka;
     private int countHuman = 0;
     int status = 0;
 
+    public Car() {
+    }
+    public Car(String number) {
+        this.number = number;
+    }
+    public Car(String number, String color) {
+        this.number = number;
+        this.color = color;
+    }
+    public Car(String number, String color, String marka, int countHuman) {
+        this.number = number;
+        this.color = color;
+        this.marka = marka;
+    }
 
+    public String getMarka() { return marka; }
+    public void setMarka(String marka) { this.marka = marka; }
     public String getNumber() {
         return number;
     }
-
     public void setNumber(String number) {
         this.number = number;
     }
-
     public String getColor() {
         return color;
     }
-
     public void setColor(String color) {
         this.color = color;
     }
 
+    public static void getCountCars() {
+
+    }
+
     public void printAboutMe() {
-        System.out.println("Number - " + number + ", color - " + color + ", passangers - " + countHuman);
+        System.out.println("Number - " + number + ", color - " + color + ", passangers - " + countHuman + ", marka - " + marka);
     }
 
     public void addHuman(int count) {
         countHuman = count;
     }
+
     public void star() {
         if (status == 0) {
             System.out.println("Авто" + "Number - " + number + ", color - " + color + ", passangers - " + countHuman + " звелось");

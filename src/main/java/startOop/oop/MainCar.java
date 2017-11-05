@@ -18,19 +18,20 @@ public class MainCar {
         System.out.println();
         System.out.println("car1.getNumber()="+car1.getNumber());
         System.out.println("car2.getNumber()="+car2.getNumber());
+        System.out.println();
 
         Random random = new Random();
-        /*int count;
-        for (int i = 0; i < 10; i++) {
+        car1.status = random.nextInt(3);
+        car1.star();
+        car1.move();
+        car1.stop();
+        int count;
+        /*for (int i = 0; i < 3; i++) {
             count = random.nextInt(11) - 5;
             car1.addHuman(count);
             car2.addHuman(count);
             car1.printAboutMe();
             car2.printAboutMe();
         }*/
-        car1.status = random.nextInt(3);
-        car1.star();
-        car1.move();
-        car1.stop();
     }
 }

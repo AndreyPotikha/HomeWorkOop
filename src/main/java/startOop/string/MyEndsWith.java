@@ -1,30 +1,20 @@
 package startOop.string;
 
+import java.util.Arrays;
+
 public class MyEndsWith {
 
     public static void main(String[] args) {
 
 //        System.out.println(myEndsWith("Пробуем проверит окончание предложения", "предложения"));
-        mySplit("Я прохожу", "тему по работе с String");
+        System.out.println(mySplit("Я прохожу", "тему по работе с String"));
     }
 
-    private static String[] mySplit(String line1, String line2) {
+    private static char[] mySplit(String line1, String line2) {
         line1 += " " + line2;
-        char check;
-        int counter = 0;
-        char checkMass[] = new char[line1.length()];
-        String massLine[] = new String[line1.length()];
-        for (int i = 0; i < line1.length() - 1; i++) {
-            check = line1.charAt(i);
-            if (check == ' ') {
-                for (int j = 0; j < counter; j++) {
-
-                }
-            }
-            counter++;
-
-        }
-        return null;
+        char lineChar[] = line1.toCharArray();
+        System.out.println(Arrays.toString(lineChar));
+        return lineChar;
     }
 
     private static boolean myEndsWith(String line1, String line2) {

@@ -7,7 +7,9 @@ public class CodeStepByStep {
 
     public static void main(String[] args) {
 
-        deleteDuplicates();
+        removeRange(5, 9);
+
+//        deleteDuplicates();
 
 //        RemoveRange(2, 6);
 
@@ -35,6 +37,21 @@ public class CodeStepByStep {
         removeEvenLength(remove);*/
 
 //        arrayListMysteryInsert();
+    }
+
+    private static void removeRange(int min, int max) {
+        Set<Integer> list = new HashSet<Integer>();
+        for (int i = 1; i < 11; i++) {
+            list.add(i);
+        }
+        List<Integer> fromMinToMax = new LinkedList<Integer>();
+        for (Integer elem : list) {
+            if (elem >= min && elem <= max) {
+                fromMinToMax.add(elem);
+            }
+        }
+        list.removeAll(fromMinToMax);
+        System.out.println(list);
     }
 
     private static void deleteDuplicates() {

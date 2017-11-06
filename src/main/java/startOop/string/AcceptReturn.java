@@ -5,8 +5,8 @@ import java.util.Scanner;
 public class AcceptReturn {
 
     public static void main(String[] args) {
-//        stringWord();
-//        charWord();
+        stringWord();
+        charWord();
         System.out.println(lestIndex("Слон", 'л'));
 
     }

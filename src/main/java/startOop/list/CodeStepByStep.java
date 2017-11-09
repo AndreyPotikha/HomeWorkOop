@@ -44,6 +44,8 @@ public class CodeStepByStep {
         for (int i = 1; i < 11; i++) {
             list.add(i);
         }
+
+
         List<Integer> fromMinToMax = new LinkedList<Integer>();
         for (Integer elem : list) {
             if (elem >= min && elem <= max) {

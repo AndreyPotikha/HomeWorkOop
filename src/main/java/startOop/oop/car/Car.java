@@ -1,4 +1,4 @@
-package startOop.oop;
+package startOop.oop.car;
 
 public class Car {
     String number;

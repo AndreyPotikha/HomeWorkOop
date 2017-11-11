@@ -1,13 +1,13 @@
 package startOop.list;
 
-import java.awt.image.SampleModel;
 import java.util.*;
 
 public class CodeStepByStep {
 
     public static void main(String[] args) {
+        removeRangeA(5, 9);
 
-        removeRange(5, 9);
+//        removeRange(5, 9);
 
 //        deleteDuplicates();
 
@@ -37,6 +37,28 @@ public class CodeStepByStep {
         removeEvenLength(remove);*/
 
 //        arrayListMysteryInsert();
+    }
+
+    private static void removeRangeA(int min, int max) {
+        Set<Integer> set = new HashSet<>();
+        set.add(1);
+        set.add(3);
+        set.add(5);
+        set.add(7);
+        set.add(9);
+        set.add(11);
+        set.add(16);
+
+        System.out.println(set);
+
+        Iterator<Integer> iter = set.iterator();
+        while (iter.hasNext()) {
+            int n = iter.next();
+            if (n >= min & n <= max) {
+                iter.remove();
+            }
+        }
+        System.out.println(set);
     }
 
     private static void removeRange(int min, int max) {

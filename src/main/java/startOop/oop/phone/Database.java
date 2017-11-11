@@ -1,6 +1,4 @@
-package startOop.oop.car;
-
-import startOop.oop.phone.Phone;
+package startOop.oop.phone;
 
 import java.util.LinkedList;
 import java.util.List;

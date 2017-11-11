@@ -1,7 +1,5 @@
 package startOop.oop.phone;
 
-import startOop.oop.car.Database;
-
 import java.util.List;
 import java.util.Random;
 import java.util.Scanner;

@@ -3,7 +3,7 @@ package startOop.oop.carTrack.track;
 public class Track {
 
     private String number;
-    private static int status = 0;
+    private int status = 0;
 
 
     public Track() {
@@ -21,11 +21,11 @@ public class Track {
     }
 
     public void roll() {
-        if (status == 0) {
-            System.out.println("Прицеп с номером " + getNumber() + " начал катиться");
-        } else {
-            System.out.println("Прицеп с номером " + getNumber() + " уже катится");
-        }
+            if (status == 0) {
+                System.out.println("Прицеп с номером " + getNumber() + " начал катиться");
+            } else {
+                System.out.println("Прицеп с номером " + getNumber() + " уже катится");
+            }
     }
     public void stop() {
         if (status == 1) {
@@ -33,5 +33,11 @@ public class Track {
         } else {
             System.out.println("Прицеп с номером " + getNumber() + " нельза остановить, он уже стоит");
         }
+    }
+
+    @Override
+    public String toString() {
+        return "number='" + number + '\'' +
+                '}';
     }
 }

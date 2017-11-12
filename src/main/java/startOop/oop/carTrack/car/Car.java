@@ -75,7 +75,6 @@ public class Car {
                     + countHuman + " не могу завестись так как уже заведена");
         }
 
-
     }
     public void move() {
         if (status == 0) {
@@ -102,5 +101,15 @@ public class Car {
         }
     }
 
-
+    @Override
+    public String toString() {
+        return "Car{" +
+                "number='" + number + '\'' +
+                ", color='" + color + '\'' +
+                ", marka='" + marka + '\'' +
+                ", countHuman=" + countHuman +
+                ", status=" + status +
+                ", track=" + track +
+                '}';
+    }
 }

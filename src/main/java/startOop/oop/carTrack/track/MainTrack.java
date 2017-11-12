@@ -4,6 +4,8 @@ public class MainTrack {
 
     public static void main(String[] args) {
 
+
+
         Track track1 = new Track();
         Track track2 = new Track();
 
@@ -18,7 +20,7 @@ public class MainTrack {
         track1.stop();
         track2.stop();
         System.out.println();
-        Track trackStatus2 = new Track(0);
+        Track trackStatus1 = new Track(0);
         track2.stop();
     }
 }

@@ -8,10 +8,14 @@ public class Car {
     String marka;
     private int countHuman = 0;
     int status = 0;
-    Track track = null;
+    private Track track = null;
 
-    public void setTrack(Track track) {
-        this.track = track;
+    public void setTrack(Track tr) {
+        if (track == null) {
+            this.track = tr;
+        } else {
+            System.out.println("Прицеп уже закреплен");
+        }
     }
 
     public void unSetTrack() {
@@ -70,6 +74,7 @@ public class Car {
             System.out.println("Авто" + "Number - " + number + ", color - " + color + ", passangers - "
                     + countHuman + " не могу завестись так как уже заведена");
         }
+
 
     }
     public void move() {

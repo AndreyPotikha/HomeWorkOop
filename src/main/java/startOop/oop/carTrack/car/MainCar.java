@@ -24,7 +24,6 @@ public class MainCar {
         int randomMethod;
         for (int i = 0; i < 10; i++) {
             randomMethod = random.nextInt(3) + 1;
-//            System.out.println(randomMethod);
             switch (randomMethod) {
                 case 1:
                     car1.status = random.nextInt(3);

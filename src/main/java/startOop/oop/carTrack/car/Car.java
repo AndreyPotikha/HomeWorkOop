@@ -1,4 +1,6 @@
-package startOop.oop.car;
+package startOop.oop.carTrack.car;
+
+import startOop.oop.carTrack.track.Track;
 
 public class Car {
     String number;
@@ -6,6 +8,15 @@ public class Car {
     String marka;
     private int countHuman = 0;
     int status = 0;
+    Track track = null;
+
+    public void setTrack(Track track) {
+        this.track = track;
+    }
+
+    public void unSetTrack() {
+        track = null;
+    }
 
     public Car() {
     }
@@ -85,4 +96,6 @@ public class Car {
                     + countHuman + " не могу остановиться так как не заведенная стою");
         }
     }
+
+
 }

@@ -21,14 +21,16 @@ public class Track {
     }
 
     public void roll() {
-            if (status == 0) {
+        status++;
+        if (status <= 1) {
                 System.out.println("Прицеп с номером " + getNumber() + " начал катиться");
             } else {
                 System.out.println("Прицеп с номером " + getNumber() + " уже катится");
             }
     }
     public void stop() {
-        if (status == 1) {
+        status--;
+        if (status >= 1) {
             System.out.println("Прицеп с номером " + getNumber() + " остановился");
         } else {
             System.out.println("Прицеп с номером " + getNumber() + " нельза остановить, он уже стоит");

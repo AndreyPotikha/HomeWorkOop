@@ -25,6 +25,9 @@ public class MainCar {
         System.out.println(car2);
         System.out.println();
 
+        car1.move();
+        track1.roll();
+
 
 
        /*  car1.number = "AA 1111";

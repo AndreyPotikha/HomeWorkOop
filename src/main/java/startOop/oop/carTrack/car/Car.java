@@ -10,6 +10,10 @@ public class Car {
     int status = 0;
     private Track track = null;
 
+    public Track getTrack() {
+        return track;
+    }
+
     public void setTrack(Track tr) {
         if (track == null) {
             this.track = tr;

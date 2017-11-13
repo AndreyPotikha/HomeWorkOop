@@ -8,15 +8,18 @@ public class Car {
     String marka;
     private int countHuman = 0;
     int status = 0;
-    private Track track = null;
+    private Track track;
+    private int carAndTrack = 0;
 
     public Track getTrack() {
+        carAndTrack--;
         return track;
     }
 
     public void setTrack(Track tr) {
         if (track == null) {
             this.track = tr;
+            carAndTrack++;
         } else {
             System.out.println("Прицеп уже закреплен");
         }
@@ -41,6 +44,8 @@ public class Car {
         this.marka = marka;
     }
 
+    public int getCarAndTrack() { return carAndTrack; }
+    public void setCarAndTrack(int carAndTrack) { this.carAndTrack = carAndTrack; }
     public String getMarka() { return marka; }
     public void setMarka(String marka) { this.marka = marka; }
     public String getNumber() {
@@ -70,7 +75,7 @@ public class Car {
 
     public void star() {
         if (status == 0) {
-            System.out.println("Авто" + "Number - " + number + ", color - " + color + ", passangers - " + countHuman + " звелось");
+            System.out.println("Авто" + "Number - " + number + ", color - " + color + ", passangers - " + countHuman + " звелась");
         } else if (status == 1) {
             System.out.println("Авто" + "Number - " + number + ", color - " + color + ", passangers - " + countHuman
                     + " не могу завестись, так как уже заведена");
@@ -82,7 +87,7 @@ public class Car {
     }
     public void move() {
         if (status == 0) {
-            System.out.println("Авто" + "Number - " + number + ", color - " + color + ", passangers - " + countHuman + " поехало");
+            System.out.println("Авто" + "Number - " + number + ", color - " + color + ", passangers - " + countHuman + " поехала");
         } else if (status == 1) {
             System.out.println("Авто" + "Number - " + number + ", color - " + color + ", passangers - " + countHuman
                     + " не могу ехать так как уже еду");

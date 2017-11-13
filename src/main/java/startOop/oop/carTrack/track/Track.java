@@ -26,8 +26,8 @@ public class Track {
     }
 
     public void roll() {
-        Car car = new Car();
-        if (car.getTrack() == null) {
+            Car car = new Car();
+        if (car.getCarAndTrack() < 1) {
             status++;
             if (status <= 1) {
                 System.out.println("Прицеп с номером " + getNumber() + " начал катиться");
@@ -37,12 +37,16 @@ public class Track {
         }
     }
     public void stop() {
-        status--;
-        if (status == 1) {
-            System.out.println("Прицеп с номером " + getNumber() + " остановился");
-        } else {
-            System.out.println("Прицеп с номером " + getNumber() + " нельза остановить, он уже стоит");
-        }
+        Car car = new Car();
+        if (car.getCarAndTrack() == 1) {
+            status--;
+            if (status == 1) {
+                System.out.println("Прицеп с номером " + getNumber() + " остановился");
+            } else {
+                System.out.println("Прицеп с номером " + getNumber() + " нельза остановить, он уже стоит");
+            }
+        } else
+            System.out.println("You must remove track from car");
     }
 
     @Override

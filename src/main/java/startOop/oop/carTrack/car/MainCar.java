@@ -27,6 +27,7 @@ public class MainCar {
 
         car1.move();
         track1.roll();
+        track1.stop();
 
 
 

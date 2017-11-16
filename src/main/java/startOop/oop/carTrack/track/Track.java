@@ -38,7 +38,7 @@ public class Track {
     }
     public void stop() {
         Car car = new Car();
-        if (car.getCarAndTrack() == 1) {
+        if (car.getCarAndTrack() == 0) {
             status--;
             if (status == 1) {
                 System.out.println("Прицеп с номером " + getNumber() + " остановился");
@@ -46,7 +46,7 @@ public class Track {
                 System.out.println("Прицеп с номером " + getNumber() + " нельза остановить, он уже стоит");
             }
         } else
-            System.out.println("You must remove track from car");
+            System.out.println("Сперва отсоедените прицеп от машины");
     }
 
     @Override

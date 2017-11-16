@@ -9,12 +9,8 @@ public class Car {
     private int countHuman = 0;
     int status = 0;
     private Track track;
-    private int carAndTrack = 0;
+    private static int carAndTrack = 0;
 
-    public Track getTrack() {
-        carAndTrack--;
-        return track;
-    }
 
     public void setTrack(Track tr) {
         if (track == null) {
@@ -26,6 +22,7 @@ public class Car {
     }
 
     public void unSetTrack() {
+        carAndTrack--;
         track = null;
     }
 
@@ -73,9 +70,9 @@ public class Car {
         countHuman = count;
     }
 
-    public void star() {
+    public void star(Track track) {
         if (status == 0) {
-            System.out.println("Авто" + "Number - " + number + ", color - " + color + ", passangers - " + countHuman + " звелась");
+            System.out.println("Авто" + "Number - " + number + ", color - " + color + ", passangers - " + countHuman + " звелась" + "прицеп");
         } else if (status == 1) {
             System.out.println("Авто" + "Number - " + number + ", color - " + color + ", passangers - " + countHuman
                     + " не могу завестись, так как уже заведена");
@@ -85,15 +82,19 @@ public class Car {
         }
 
     }
-    public void move() {
+    public void move(Track track) {
         if (status == 0) {
-            System.out.println("Авто" + "Number - " + number + ", color - " + color + ", passangers - " + countHuman + " поехала");
+            System.out.println("Авто" + "Number - " + number + ", color - " + color + ", passangers - " + countHuman + " поехала "
+                    + "прицеп "
+                    + track);
         } else if (status == 1) {
             System.out.println("Авто" + "Number - " + number + ", color - " + color + ", passangers - " + countHuman
-                    + " не могу ехать так как уже еду");
+                    + " не могу ехать так как уже еду" + " прицеп "
+                    + track);
         } else {
             System.out.println("Авто" + "Number - " + number + ", color - " + color + ", passangers - "
-                    + countHuman + " не могу ехать так как еще не заведена");
+                    + countHuman + " не могу ехать так как еще не заведена" + " прицеп "
+                    + track);
         }
 
     }

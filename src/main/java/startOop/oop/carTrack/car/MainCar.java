@@ -17,16 +17,11 @@ public class MainCar {
         car1.setNumber("CC 3333");
         car1.setMarka("BMW");
         System.out.println(car1);
-        track2.setNumber("BB1111BB");
-        car2.setTrack(track2);
-        car2.color = "Blue";
-        car2.setNumber("CC 3333");
-        car2.setMarka("BMW");
-        System.out.println(car2);
         System.out.println();
 
-        car1.move();
-        track1.roll();
+        car1.move(track1);
+        track1.stop();
+        car1.unSetTrack();
         track1.stop();
 
 

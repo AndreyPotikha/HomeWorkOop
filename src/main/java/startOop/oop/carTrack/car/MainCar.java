@@ -20,9 +20,10 @@ public class MainCar {
         System.out.println();
 
         car1.move(track1);
+        car1.stop(track1);
         track1.stop();
-        car1.unSetTrack();
-        track1.stop();
+     /*   car1.unSetTrack();
+        track1.stop();*/
 
 
 

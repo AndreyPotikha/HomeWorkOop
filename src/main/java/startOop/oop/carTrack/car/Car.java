@@ -85,29 +85,30 @@ public class Car {
     public void move(Track track) {
         if (status == 0) {
             System.out.println("Авто" + "Number - " + number + ", color - " + color + ", passangers - " + countHuman + " поехала "
-                    + "прицеп "
+                    + "с прицепом "
                     + track);
         } else if (status == 1) {
             System.out.println("Авто" + "Number - " + number + ", color - " + color + ", passangers - " + countHuman
-                    + " не могу ехать так как уже еду" + " прицеп "
+                    + " не могу ехать так как уже еду" + " с прицепом "
                     + track);
         } else {
             System.out.println("Авто" + "Number - " + number + ", color - " + color + ", passangers - "
-                    + countHuman + " не могу ехать так как еще не заведена" + " прицеп "
+                    + countHuman + " не могу ехать так как еще не заведена" + " с прицепом "
                     + track);
         }
 
     }
-    public void stop() {
+    public void stop(Track track) {
         if (status == 0) {
             System.out.println("Авто" + "Number - " + number + ", color - " + color + ", passangers - " + countHuman
-                    + " остановилось с выключением двигателя");
+                    + " остановилось с выключением двигателя" + " с прицепом  " + track);
+            carAndTrack--;
         } else if (status == 1) {
             System.out.println("Авто" + "Number - " + number + ", color - " + color + ", passangers - " + countHuman
-                    + " не могу остановиться так как заведенная стою");
+                    + " не могу остановиться так как заведенная стою" + " с прицепом  " + track);
         } else {
             System.out.println("Авто" + "Number - " + number + ", color - " + color + ", passangers - "
-                    + countHuman + " не могу остановиться так как не заведенная стою");
+                    + countHuman + " не могу остановиться так как не заведенная стою" + " с прицепом  " + track);
         }
     }
 

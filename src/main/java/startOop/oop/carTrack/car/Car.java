@@ -3,9 +3,9 @@ package startOop.oop.carTrack.car;
 import startOop.oop.carTrack.track.Track;
 
 public class Car {
-    String number;
-    String color;
-    String marka;
+    private String number;
+    private String color;
+    private String marka;
     private int countHuman = 0;
     int status = 0;
     private Track track;

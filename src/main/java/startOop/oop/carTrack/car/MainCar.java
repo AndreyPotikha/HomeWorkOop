@@ -13,7 +13,7 @@ public class MainCar {
 
         track1.setNumber("AA1111AA");
         car1.setTrack(track1);
-        car1.color = "Blue";
+        car1.setColor("Blue");
         car1.setNumber("CC 3333");
         car1.setMarka("BMW");
         System.out.println(car1);
@@ -22,6 +22,9 @@ public class MainCar {
         car1.move(track1);
         car1.stop(track1);
         track1.stop();
+
+        car2.setTrack(track1);
+        System.out.println(car2);
      /*   car1.unSetTrack();
         track1.stop();*/
 

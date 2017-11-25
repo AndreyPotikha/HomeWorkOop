@@ -5,10 +5,9 @@ public class MainConditioners {
     public static void main(String[] args) {
         BlockConditioners blockConditioners = new BlockConditioners();
 
-        blockConditioners.getTurn(blockConditioners.getNameOfConditioner());
-//        blockConditioners.turnOn(blockConditioners.condotioners());
-
-
+        blockConditioners.getTurn(blockConditioners.cupperHanter());
+        blockConditioners.turnOn(blockConditioners.cupperHanter());
+//        blockConditioners.getTurn(blockConditioners.cupperHanter());
 
 
     }

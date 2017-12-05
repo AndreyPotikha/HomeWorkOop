@@ -2,12 +2,13 @@ package startOop.oop.phone2;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 public class MainPhone {
 
     public static void main(String[] args) {
 
-        /*Phone phone1 = new Nokia();
+        Phone phone1 = new Nokia();
         Phone phone2 = new Samsung();
         Phone phone3 = new iPhone4();
         Phone phone4 = new iPhone5();
@@ -15,11 +16,7 @@ public class MainPhone {
         List<Phone> samsung = ((Samsung)phone2).samsung();
         List<Phone> iphon4 = ((iPhone4)phone3).iphon4();
         List<Phone> iphon5 = ((iPhone5)phone4).iphon5();
-*/
-        printModel();
-        printAppleId();
 
-/*
         Scanner scanner = new Scanner(System.in);
         System.out.println("Кто звонит: ");
         String number = scanner.nextLine();
@@ -90,7 +87,10 @@ public class MainPhone {
                 default:
                     System.out.println("Нету такого номера");
         }
-*/
+        scanner.close();
+
+        printModel();
+        printAppleId();
 
     }
 

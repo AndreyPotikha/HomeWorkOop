@@ -1,6 +1,10 @@
 package startOop.oop.initialization;
 
 public class DivInitial {
+
+    static String name = "Andrey";
+    String surname = "Potikha";
+
     {
         System.out.println("Блок инициализиции");
     }

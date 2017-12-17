@@ -8,6 +8,6 @@ public class TestMyList {
         linked.addLast("1");
         linked.addFirst("2");
         System.out.println(linked.size());
-        System.out.println(linked.getElementByIndex(2));
+        System.out.println(linked.getElementByIndex(0));
     }
 }

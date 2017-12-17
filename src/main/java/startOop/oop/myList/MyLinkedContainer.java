@@ -7,8 +7,8 @@ public class MyLinkedContainer<T> implements Linked<T> {
     private int size = 0;
 
     public MyLinkedContainer() {
-        lstNode = new Node<T>(null, fstNode, null);
-        fstNode = new Node<T>(null, null, lstNode);
+        lstNode = new Node<T>(null,  null, fstNode);
+        fstNode = new Node<T>(null, lstNode, null);
     }
 
     @Override

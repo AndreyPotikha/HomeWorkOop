@@ -31,7 +31,7 @@ public class Conditioner {
         blockConditioners.setOnOff("On");
         System.out.println(blockConditioners);
         conditioner.remove("off");
-        conditioner.add(blockConditioners);
+        conditioner.myAdd(blockConditioners);
         System.out.println(conditioner);*/
         return Conditioner.turnOn(conditioner);
     }

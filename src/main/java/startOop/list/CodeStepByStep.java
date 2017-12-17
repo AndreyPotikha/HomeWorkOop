@@ -20,20 +20,20 @@ public class CodeStepByStep {
 //        SwitchPairs();
 
         /*ArrayList<String> mirror = new ArrayList<String>();
-        mirror.add("a");
-        mirror.add("b");
-        mirror.add("c");
+        mirror.myAdd("a");
+        mirror.myAdd("b");
+        mirror.myAdd("c");
         Mirror(mirror);*/
 
        /* ArrayList<String> remove = new ArrayList<String>();
-        remove.add("hi");
-        remove.add("there");
-        remove.add("how");
-        remove.add("is");
-        remove.add("it");
-        remove.add("going");
-        remove.add("good");
-        remove.add("sirs");
+        remove.myAdd("hi");
+        remove.myAdd("there");
+        remove.myAdd("how");
+        remove.myAdd("is");
+        remove.myAdd("it");
+        remove.myAdd("going");
+        remove.myAdd("good");
+        remove.myAdd("sirs");
         removeEvenLength(remove);*/
 
 //        arrayListMysteryInsert();
